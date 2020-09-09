@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap">
+<title>Happiness Survey</title>
+</head>
+
+<body>
+<main id="main">
+  <header class="header">
+    <h1 id="title">Does it Happy?</h1>
+    <h2>A (hopefully) inspirational self-reflection survey</h2>
+    <p id="description">The idea is simple: be honest with your answers and find your inner 'why'. <em>Don't overthink it.</em></p>
+  </header>
+  <form id="survey-form">
+		<div id="name-input">
+    	<label for="name" id="name-label">Name:</label><br>
+    	<input type="text" id="name" name="name" placeholder="i.e. Ada Lovelace" required><br>
+		</div>
+		<div id="email-input">
+    	<label for="email" id="email-label">Email:</label><br>
+    	<input type="email" id="email" name="email" placeholder="loveada42@email.com" required><br>
+		</div>
+		<div id="dropdown-input">
+    	<label for="dropdown">What best describes your headspace today?</label><br>
+    	<select id="dropdown" name="dropdown">
+      	<option value="Happy">Happy</option>
+      	<option value="Excited">Excited</option>
+      	<option value="Content">Content</option>
+      	<option value="Fine">Fine</option>
+      	<option value="Frustrated">Frustrated</option>
+      	<option value="Angry">Angry</option>
+      	<option value="Unhappy">Unhappy</option>
+      	<option value="Sad">Sad</option>
+    	</select><br>
+		</div>
+    <label for="number" id="number-label">On a scale from one to five, rate the intesity of that feeling:</label><br>
+    <input type="number" id="number" name="rating" min="1" max="5" step="1" placeholder="3"><br>
+    <div id="radio">
+      <p>Do you want to continue to feel this way?</p>
+      <input type="radio" id="yes" name="change" value="yes">
+      <label for="yes">Yes</label><br>
+      <input type="radio" id="no" name="change" value="no">
+      <label for="no">No</label><br>
+      <input type="radio" id="idontknow" name="change" value="idontknow">
+      <label for="idontknow">I don't know</label>
+    </div>
+    <div id="checkbox">
+      <p>What feels would you like to be having?</p>
+      <input type="checkbox" id="inspired" name="inspired" value="feels">
+      <label for="inspired">Inspired</label><br>
+      <input type="checkbox" id="motivated" name="motivated" value="feels">
+      <label for="motivated">Motivated</label><br>
+      <input type="checkbox" id="energized" name="energized" value="feels">
+      <label for="energized">Energized</label><br>
+      <input type="checkbox" id="happy" name="happy" value="feels">
+      <label for="happy">Happy</label><br>
+      <input type="checkbox" id="excited" name="excited" value="feels">
+      <label for="excited">Excited</label><br>
+      <input type="checkbox" id="content" name="content" value="feels">
+      <label for="content">Content</label><br>
+      <input type="checkbox" id="loved" name="loved" value="feels">
+      <label for="loved">Loved</label><br>
+      <input type="checkbox" id="loving" name="loving" value="feels">
+      <label for="loving">Loving</label><br>
+      <input type="checkbox" id="sad" name="sad" value="feels">
+      <label for="sad">Sad</label><br>
+      <input type="checkbox" id="angry" name="angry" value="feels">
+      <label for="angry">Angry</label><br>
+      <input type="checkbox" id="dgaf" name="dgaf" value="feels">
+      <label for="dgaf">DGAF</label><br>
+    </div>
+    <p>For each question, think about "why". Write a little bit about those thoughts in the space below.</p>
+    <textarea id="textarea" name="message" rows="30" cols="auto" placeholder="Don't worry, this is a safe space, and 100% free from judgement.">
+</textarea><br>
+    <input type="submit" id="submit" value="submit">
+  </form>
+</main>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
